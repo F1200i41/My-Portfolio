@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farida Mohamed — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-logo">FM<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta" onclick="downloadCV()">Download CV</button>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#certifications" class="mob-link">Certs</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span> Available for Opportunities
+      </div>
+      <h1 class="hero-title reveal">
+        <span class="line">Farida</span>
+        <span class="line gradient-text">Mohamed</span>
+      </h1>
+      <div class="hero-roles reveal">
+        <span id="role-display">Software Tester</span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc reveal">
+        Computer Science student crafting quality software experiences — from breaking bugs to building stunning visuals. Cairo, Egypt.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn-primary">Let's Connect</a>
+        <a href="#projects" class="btn-ghost">View Work</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Design</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Roles Held</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Languages</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <div class="avatar-initials">FM</div>
+        </div>
+        <svg class="ring-svg" viewBox="0 0 300 300">
+          <circle cx="150" cy="150" r="140" fill="none" stroke="url(#ringGrad)" stroke-width="1.5" stroke-dasharray="6 4" />
+          <defs>
+            <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#7c3aed"/>
+              <stop offset="100%" stop-color="#3b82f6"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="float-badge fb-1">🧪 QA</div>
+        <div class="float-badge fb-2">🎨 Design</div>
+        <div class="float-badge fb-3">⚙️ Dev</div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label reveal">/ About Me</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">Bridging <span class="gradient-text">Quality</span> &amp; Creativity</h2>
+          <p>I'm a Computer Science student at CHI, New Cairo, passionate about two worlds that rarely meet: <strong>software testing</strong> and <strong>graphic design</strong>. I find bugs that others miss and create visuals that people remember.</p>
+          <p>With experience in GDG communities and startup environments, I've led creative teams, managed non-technical operations, and delivered quality digital products under real-world pressure.</p>
+          <p>Currently completing my Bachelor's (expected June 2026) with a focus on bringing both precision and artistry to every project I touch.</p>
+          <div class="about-langs">
+            <span class="lang-chip">🇬🇧 English</span>
+            <span class="lang-chip">🇹🇷 Turkish</span>
+            <span class="lang-chip">🇰🇷 Korean</span>
+          </div>
+        </div>
+        <div class="about-cards reveal">
+          <div class="info-card">
+            <div class="card-icon">🎓</div>
+            <div>
+              <div class="card-title">B.Sc. Computer Science</div>
+              <div class="card-sub">CHI · New Cairo · GPA 3.0 · 2026</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">📍</div>
+            <div>
+              <div class="card-title">New Cairo, Egypt</div>
+              <div class="card-sub">Open to Remote &amp; Hybrid</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">💼</div>
+            <div>
+              <div class="card-title">5+ Experiences</div>
+              <div class="card-sub">Startups · GDG · Freelance · DEPI</div>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">🌐</div>
+            <div>
+              <div class="card-title">Google Developer Groups</div>
+              <div class="card-sub">Member · AOU Campus · 2024–Now</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-label reveal">/ Skills</div>
+      <h2 class="section-title reveal">What I <span class="gradient-text">Do Best</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal" data-delay="0">
+          <div class="skill-card-icon">🧪</div>
+          <h3>Software Testing</h3>
+          <p>Manual &amp; automated testing, test case design, bug reporting, and QA documentation. Experienced in verifying functionality, performance, and usability.</p>
+          <div class="skill-tags">
+            <span>Manual Testing</span><span>Automated Testing</span><span>Test Cases</span><span>Bug Tracking</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-delay="100">
+          <div class="skill-card-icon">🎨</div>
+          <h3>Graphic Design</h3>
+          <p>3+ years of freelance and professional design work. Specializes in social media design, brand visuals, and user-centered creative direction.</p>
+          <div class="skill-tags">
+            <span>Social Media</span><span>Brand Design</span><span>UI/UX</span><span>Canva / Adobe</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-delay="200">
+          <div class="skill-card-icon">💻</div>
+          <h3>Software Development</h3>
+          <p>Computer Science background with coursework in software development. Completed the Digital Egypt Pioneers Initiative software track.</p>
+          <div class="skill-tags">
+            <span>Programming</span><span>SDLC</span><span>Problem Solving</span><span>CS Fundamentals</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal" data-delay="300">
+          <div class="skill-card-icon">🎯</div>
+          <h3>Leadership &amp; Events</h3>
+          <p>Led creative teams as Head of Design and Non-Technical Lead. Organized and coordinated GDG events, managing teams and cross-functional projects.</p>
+          <div class="skill-tags">
+            <span>Team Lead</span><span>Event Org.</span><span>Project Mgmt</span><span>Communication</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="proficiency-row reveal">
+        <div class="prof-item">
+          <div class="prof-label"><span>Software Testing</span><span>85%</span></div>
+          <div class="prof-bar"><div class="prof-fill" data-width="85"></div></div>
+        </div>
+        <div class="prof-item">
+          <div class="prof-label"><span>Graphic Design</span><span>90%</span></div>
+          <div class="prof-bar"><div class="prof-fill" data-width="90"></div></div>
+        </div>
+        <div class="prof-item">
+          <div class="prof-label"><span>Social Media Design</span><span>88%</span></div>
+          <div class="prof-bar"><div class="prof-fill" data-width="88"></div></div>
+        </div>
+        <div class="prof-item">
+          <div class="prof-label"><span>Software Development</span><span>70%</span></div>
+          <div class="prof-bar"><div class="prof-fill" data-width="70"></div></div>
+        </div>
+        <div class="prof-item">
+          <div class="prof-label"><span>Leadership &amp; Soft Skills</span><span>92%</span></div>
+          <div class="prof-bar"><div class="prof-fill" data-width="92"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS / EXPERIENCE -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">/ Projects &amp; Experience</div>
+      <h2 class="section-title reveal">Real <span class="gradient-text">Impact</span>, Real Work</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal featured">
+          <div class="project-tag">QA · 2024–2025</div>
+          <h3>DEPI Software Testing</h3>
+          <p>Tested software applications end-to-end for the Digital Egypt Pioneers Initiative — conducting manual and automated tests, documenting bugs, and working directly with developers to improve quality.</p>
+          <div class="project-tech"><span>Manual Testing</span><span>Automated Testing</span><span>Bug Reports</span><span>QA Docs</span></div>
+          <div class="project-org">Digital Egypt Pioneers Initiative · Cairo</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-tag">Design Lead · 2024–2025</div>
+          <h3>Daleel Startup — Head of Design</h3>
+          <p>Led the entire graphic design operation for Daleel startup remotely. Defined visual identity, created assets, and managed the design pipeline for the team.</p>
+          <div class="project-tech"><span>Brand Identity</span><span>Team Lead</span><span>Visual Design</span></div>
+          <div class="project-org">Daleel Startup · Remote</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-tag">Leadership · 2024–2025</div>
+          <h3>GDG CHI — Non-Technical Lead</h3>
+          <p>Managed all non-technical cores of Google Developer Groups on Campus CHI, coordinating events, teams, and operational workflows for the community.</p>
+          <div class="project-tech"><span>Event Org.</span><span>Team Mgmt</span><span>Community</span></div>
+          <div class="project-org">GDG On Campus CHI · New Cairo</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-tag">Design + Tech · 2024–Now</div>
+          <h3>GDG AOU — Design &amp; Tech Member</h3>
+          <p>Dual-role member contributing to both the creative and technical sides of the GDG community at Arab Open University campus.</p>
+          <div class="project-tech"><span>Graphic Design</span><span>Tech Contrib.</span><span>GDG</span></div>
+          <div class="project-org">GDG On Campus AOU · Remote</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-tag">Freelance · 2022–Now</div>
+          <h3>Freelance Graphic Designer</h3>
+          <p>3+ years of independent graphic design work for various clients — social media content, brand visuals, and digital assets delivered consistently and professionally.</p>
+          <div class="project-tech"><span>Social Media</span><span>Branding</span><span>Digital Assets</span></div>
+          <div class="project-org">Self-Employed · Remote</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-label reveal">/ Certifications</div>
+      <h2 class="section-title reveal">Credentials &amp; <span class="gradient-text">Achievements</span></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-body">
+            <div class="cert-title">English Diploma</div>
+            <div class="cert-issuer">American Board Certified</div>
+            <div class="cert-year">2025</div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">💻</div>
+          <div class="cert-body">
+            <div class="cert-title">ICDL Certification</div>
+            <div class="cert-issuer">American Board Certified</div>
+            <div class="cert-year">2025</div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🌟</div>
+          <div class="cert-body">
+            <div class="cert-title">Soft Skills &amp; Personal Development Diploma</div>
+            <div class="cert-issuer">American Board Certified</div>
+            <div class="cert-year">2025</div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🚀</div>
+          <div class="cert-body">
+            <div class="cert-title">Software Development Track</div>
+            <div class="cert-issuer">Digital Egypt Pioneers Initiative</div>
+            <div class="cert-year">2026</div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🔍</div>
+          <div class="cert-body">
+            <div class="cert-title">Software Testing Program</div>
+            <div class="cert-issuer">DEPI — Digital Egypt Pioneers Initiative</div>
+            <div class="cert-year">2024–2025</div>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon">🌐</div>
+          <div class="cert-body">
+            <div class="cert-title">GDG Member Certificate</div>
+            <div class="cert-issuer">Google Developer Groups · AOU Campus</div>
+            <div class="cert-year">2024–Now</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">/ Contact</div>
+      <h2 class="section-title reveal">Let's <span class="gradient-text">Work Together</span></h2>
+      <p class="contact-intro reveal">Whether it's a QA role, design collaboration, or just a conversation — I'm always open to new opportunities.</p>
+
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <a href="mailto:faridamosalah@gmail.com" class="contact-item">
+            <div class="ci-icon">✉️</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-val">faridamosalah@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+201275720858" class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div>
+              <div class="ci-label">Phone</div>
+              <div class="ci-val">+20 012 7572 0858</div>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-label">Location</div>
+              <div class="ci-val">New Cairo, Egypt</div>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://linkedin.com" target="_blank" class="social-btn">LinkedIn</a>
+            <button class="social-btn" onclick="downloadCV()">Download CV</button>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject" />
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-w">Send Message ✦</button>
+          <div class="form-success" id="formSuccess">Message sent! I'll be in touch soon ✨</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">FM<span class="dot">.</span></div>
+      <p>Crafted with precision &amp; passion · Cairo 2025</p>
+      <p class="footer-copy">© 2025 Farida Mohamed. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
