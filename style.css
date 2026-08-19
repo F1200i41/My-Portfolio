@@ -1622,3 +1622,1062 @@ footer {
         text-align: center;
     }
 }
+
+
+/* =====================================================
+   WORK PAGE
+===================================================== */
+
+
+/* =========================
+   ACTIVE NAV LINK
+========================= */
+
+.nav-links a.active {
+
+    color: var(--purple);
+
+}
+
+
+/* =========================
+   WORK HERO
+========================= */
+
+.work-hero {
+
+    min-height: 55vh;
+
+    padding:
+        170px
+        7%
+        90px;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(168, 85, 247, 0.18),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 10% 30%,
+            rgba(124, 58, 237, 0.12),
+            transparent 35%
+        ),
+
+        #faf8ff;
+}
+
+
+.work-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(
+            rgba(124, 58, 237, 0.035) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(124, 58, 237, 0.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 70px 70px;
+
+    pointer-events: none;
+}
+
+
+.work-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+}
+
+
+.work-hero h1 {
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size:
+        clamp(55px, 7vw, 90px);
+
+    line-height: 1;
+
+    letter-spacing: -5px;
+
+    color: var(--text);
+}
+
+
+.work-hero h1 span {
+
+    display: block;
+
+    color: var(--purple);
+}
+
+
+.work-hero p {
+
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    color: var(--muted);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+
+/* =========================
+   WORK PAGE
+========================= */
+
+.work-page {
+
+    padding:
+        90px
+        7%
+        120px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 45px;
+}
+
+
+
+/* =========================
+   WORK CARD
+========================= */
+
+.work-card {
+
+    display: grid;
+
+    grid-template-columns:
+        0.95fr
+        1.05fr;
+
+    min-height: 480px;
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        rgba(124, 58, 237, 0.11);
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 45px
+        rgba(76, 29, 149, 0.08);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+.work-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 30px 70px
+        rgba(76, 29, 149, 0.15);
+
+    border-color:
+        rgba(124, 58, 237, 0.22);
+}
+
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.work-image {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    align-self: center;
+
+    padding: 25px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f1eaff,
+            #faf8ff
+        );
+}
+
+
+.work-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.work-card:hover
+.work-image img {
+
+    transform:
+        scale(1.04);
+}
+
+
+
+/* =========================
+   IMAGE OVERLAY
+========================= */
+
+.image-overlay {
+
+    position: absolute;
+
+    left: 42px;
+
+    bottom: 42px;
+
+    padding:
+        8px
+        13px;
+
+    border-radius: 10px;
+
+    background:
+        rgba(255, 255, 255, 0.90);
+
+    backdrop-filter:
+        blur(12px);
+
+    color:
+        var(--purple);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 25px
+        rgba(50, 30, 100, 0.12);
+}
+
+
+
+/* =========================
+   WORK INFO
+========================= */
+
+.work-info {
+
+    padding:
+        65px
+        60px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.work-top {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+.work-category {
+
+    color:
+        var(--purple);
+
+    font-size:
+        11px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1.4px;
+}
+
+
+.work-number {
+
+    color:
+        #ddd6fe;
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size:
+        25px;
+
+    font-weight:
+        800;
+}
+
+
+.work-info h2 {
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size:
+        36px;
+
+    letter-spacing:
+        -1.5px;
+
+    color:
+        var(--text);
+
+    margin-bottom:
+        8px;
+}
+
+
+.work-info h3 {
+
+    font-size:
+        16px;
+
+    color:
+        #8b5cf6;
+
+    margin-bottom:
+        20px;
+
+    font-weight:
+        700;
+}
+
+
+.work-info > p {
+
+    max-width:
+        570px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        15px;
+
+    line-height:
+        1.85;
+}
+
+
+
+/* =========================
+   TAGS
+========================= */
+
+.work-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        25px;
+}
+
+
+.work-tags span {
+
+    padding:
+        7px
+        11px;
+
+    border-radius:
+        9px;
+
+    background:
+        #f5f1ff;
+
+    color:
+        #6d28d9;
+
+    font-size:
+        11px;
+
+    font-weight:
+        600;
+
+    border:
+        1px solid
+        #ebe3ff;
+}
+
+
+
+/* =========================
+   WORK BUTTONS
+========================= */
+
+.work-actions {
+
+    display:
+        flex;
+
+    gap:
+        12px;
+
+    flex-wrap:
+        wrap;
+
+    margin-top:
+        30px;
+}
+
+
+.work-btn {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    padding:
+        12px
+        18px;
+
+    border-radius:
+        12px;
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+
+    transition:
+        0.3s;
+}
+
+
+.primary-work-btn {
+
+    color:
+        white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9333ea,
+            #6366f1
+        );
+
+    box-shadow:
+        0 10px 25px
+        rgba(124, 58, 237, 0.18);
+}
+
+
+.primary-work-btn:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 30px
+        rgba(124, 58, 237, 0.27);
+}
+
+
+.secondary-work-btn {
+
+    color:
+        #6d28d9;
+
+    background:
+        #f7f4ff;
+
+    border:
+        1px solid
+        #e9ddff;
+}
+
+
+.secondary-work-btn:hover {
+
+    background:
+        #eee7ff;
+
+    transform:
+        translateY(-3px);
+}
+
+
+
+/* =========================
+   ALTERNATING CARDS
+========================= */
+
+.reverse-card {
+
+    grid-template-columns:
+        1.05fr
+        0.95fr;
+}
+
+
+.reverse-card .work-image {
+
+    order:
+        2;
+}
+
+
+.reverse-card .work-info {
+
+    order:
+        1;
+}
+
+
+
+/* =========================
+   WORK CTA
+========================= */
+
+.work-cta {
+
+    padding:
+        110px
+        7%;
+
+    text-align:
+        center;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            #eee5ff,
+            #faf9ff 60%,
+            #ffffff
+        );
+}
+
+
+.work-cta > div {
+
+    max-width:
+        700px;
+
+    margin:
+        auto;
+}
+
+
+.work-cta .section-label {
+
+    justify-content:
+        center;
+}
+
+
+.work-cta h2 {
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size:
+        48px;
+
+    line-height:
+        1.2;
+
+    letter-spacing:
+        -2px;
+}
+
+
+.work-cta h2 span {
+
+    display:
+        block;
+
+    color:
+        var(--purple);
+}
+
+
+.work-cta p {
+
+    max-width:
+        600px;
+
+    margin:
+        20px auto 30px;
+
+    color:
+        var(--muted);
+
+    line-height:
+        1.8;
+}
+
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-section {
+
+    background:
+        #ffffff;
+}
+
+
+.experience-card {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        0.8fr
+        1.2fr;
+
+    gap:
+        50px;
+
+    padding:
+        38px;
+
+    margin-top:
+        35px;
+
+    border-radius:
+        25px;
+
+    border:
+        1px solid
+        rgba(124, 58, 237, 0.12);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #faf8ff
+        );
+
+    box-shadow:
+        0 20px 50px
+        rgba(91, 33, 182, 0.08);
+
+    transition:
+        0.35s;
+}
+
+
+.experience-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 28px 65px
+        rgba(91, 33, 182, 0.13);
+}
+
+
+.experience-left {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        20px;
+}
+
+
+.experience-logo {
+
+    width:
+        75px;
+
+    height:
+        75px;
+
+    flex-shrink:
+        0;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        20px;
+
+    color:
+        white;
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size:
+        18px;
+
+    font-weight:
+        800;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9333ea,
+            #6366f1
+        );
+
+    box-shadow:
+        0 15px 30px
+        rgba(124, 58, 237, 0.22);
+}
+
+
+.experience-status {
+
+    display:
+        inline-block;
+
+    margin-bottom:
+        7px;
+
+    color:
+        #16a34a;
+
+    font-size:
+        11px;
+
+    font-weight:
+        700;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        1px;
+}
+
+
+.experience-left h3 {
+
+    font-family:
+        "Plus Jakarta Sans",
+        sans-serif;
+
+    font-size:
+        21px;
+
+    margin-bottom:
+        5px;
+}
+
+
+.experience-role {
+
+    color:
+        var(--purple);
+
+    font-size:
+        14px;
+
+    font-weight:
+        700;
+}
+
+
+.experience-content {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+}
+
+
+.experience-content > p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        14px;
+
+    line-height:
+        1.8;
+}
+
+
+.experience-tags {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        20px;
+}
+
+
+.experience-tags span {
+
+    padding:
+        7px
+        11px;
+
+    border-radius:
+        8px;
+
+    background:
+        #f1ebff;
+
+    color:
+        #6d28d9;
+
+    font-size:
+        11px;
+
+    font-weight:
+        600;
+}
+
+
+
+/* =========================
+   WORK RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .work-card,
+    .reverse-card {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .reverse-card .work-image,
+    .reverse-card .work-info {
+
+        order:
+            initial;
+    }
+
+
+    .work-image {
+
+        aspect-ratio:
+            1 / 1;
+
+        max-width:
+            550px;
+
+        margin:
+            auto;
+    }
+
+
+    .work-info {
+
+        padding:
+            40px;
+    }
+
+
+    .experience-card {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            25px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .work-hero {
+
+        min-height:
+            50vh;
+
+        padding:
+            130px 22px 70px;
+    }
+
+
+    .work-hero h1 {
+
+        font-size:
+            55px;
+
+        letter-spacing:
+            -4px;
+    }
+
+
+    .work-page {
+
+        padding:
+            60px 22px 80px;
+    }
+
+
+    .work-info {
+
+        padding:
+            30px 25px;
+    }
+
+
+    .work-info h2 {
+
+        font-size:
+            28px;
+    }
+
+
+    .work-actions {
+
+        flex-direction:
+            column;
+    }
+
+
+    .work-btn {
+
+        justify-content:
+            center;
+    }
+
+
+    .work-cta {
+
+        padding:
+            80px 22px;
+    }
+
+
+    .work-cta h2 {
+
+        font-size:
+            36px;
+    }
+
+
+    .experience-card {
+
+        padding:
+            25px;
+    }
+
+
+    .experience-left {
+
+        align-items:
+            flex-start;
+    }
+
+}
